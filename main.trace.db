@@ -1,0 +1,6 @@
+2016-06-13 11:04:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PLAYERS" already exists; SQL statement:
+CREATE TABLE players (id IDENTITY, name VARCHAR, is_alive BOOLEAN, score INT, health DOUBLE) [42101-192]
+2016-06-13 11:13:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDATE PLAYERS SET IS_ALIVE = FALSE WHERE NAME = 'Alice')[*] "; SQL statement:
+UPDATE players SET is_alive = FALSE WHERE name = 'Alice') [42000-192]
